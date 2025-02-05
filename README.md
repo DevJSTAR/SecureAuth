@@ -1,8 +1,8 @@
 # SecureAuth - Modern Authentication Template
 
 ![SecureAuth Demo 1](https://i.imgur.com/3Tq3dv3.png)
-<img src="https://i.imgur.com/Z9fKAir.png" height="282.5px" width="auto"> <img src="https://i.imgur.com/fVc7vcx.png" height="282.5px" width="auto">
-<img src="https://i.imgur.com/62jrYwD.png" height="282.5px" width="auto"> <img src="https://i.imgur.com/Za7V1SC.png" height="282.5px" width="auto">
+<img src="https://i.imgur.com/Z9fKAir.png" height="100px" width="auto"> <img src="https://i.imgur.com/fVc7vcx.png" height="100px" width="auto">
+<img src="https://i.imgur.com/62jrYwD.png" height="100px" width="auto"> <img src="https://i.imgur.com/Za7V1SC.png" height="100px" width="auto">
 
 ## 🔥 What is SecureAuth?
 
