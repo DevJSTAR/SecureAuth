@@ -4,6 +4,9 @@
 <img src="https://i.imgur.com/Z9fKAir.png" alt="SecureAuth Demo 2" height="112.5px" width="auto"> <img src="https://i.imgur.com/fVc7vcx.png" alt="SecureAuth Demo 3" height="112.5px" width="auto">
 <img src="https://i.imgur.com/62jrYwD.png" alt="SecureAuth Demo 4" height="112.5px" width="auto"> <img src="https://i.imgur.com/Za7V1SC.png" alt="SecureAuth Demo 5" height="112.5px" width="auto">
 
+> [!WARNING]
+> Some features are still unfinished or a work in progress. Certain functionalities may be limited, incomplete, or subject to change. Please review the current feature set before integrating SecureAuth into your project.
+
 ## 🔥 What is SecureAuth?
 
 **Building authentication from scratch?** Stop reinventing the wheel!  
