@@ -160,4 +160,4 @@ MIT License - Free for personal and commercial use.
 - **Modern Stack** - Uses Supabase's scalable backend
 - **Customizable** - Full control over UI and logic
 
-**[⬆️ Get Started Now](#-setup-guide-3-steps)**
+**[⬆️ Get Started Now](https://github.com/DevJSTAR/SecureAuth/tree/main?tab=readme-ov-file#%EF%B8%8F-setup-guide-3-steps)**
