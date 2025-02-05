@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="dashboard-nav">
+        <a href="/" class="brand">SecureAuth</a>
+        <div class="nav-links">
+            <div class="profile">
+                <span id="dashboardEmail"></span>
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-main">
+        <div class="dashboard-grid">
+            <!-- User Card -->
+            <div class="dashboard-card profile-card">
+                <h2>Profile Overview</h2>
+                <div class="user-info">
+                    <div class="info-item">
+                        <span class="info-label">Account Status:</span>
+                        <span class="info-value" id="accountStatus"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Last Login:</span>
+                        <span class="info-value" id="lastLogin"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Account Created:</span>
+                        <span class="info-value" id="accountCreated"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) window.location.href = '/login';
+            
+            // Populate user data
+            document.getElementById('dashboardEmail').textContent = user.email;
+            document.getElementById('accountStatus').textContent = 
+                user.email_confirmed_at ? 'Verified' : 'Pending Verification';
+            document.getElementById('lastLogin').textContent = 
+                new Date(user.last_sign_in_at).toLocaleString();
+            document.getElementById('accountCreated').textContent = 
+                new Date(user.created_at).toLocaleDateString();
+        });
+    </script>
+</body>
+</html>

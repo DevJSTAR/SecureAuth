@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth - Modern Authentication Solution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">SecureAuth</a>
+        <div class="nav-links">
+            <a href="/login" class="nav-link">Login</a>
+            <a href="/signup" class="nav-link">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Modern Authentication<br>for Modern Applications</h1>
+            <p>Secure your application with our robust authentication system featuring email verification, password recovery, and seamless user management.</p>
+            <div class="cta-buttons">
+                <a href="/signup" class="btn btn-primary">
+                    Get Started
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                </svg>
+                <h3>Secure Authentication</h3>
+                <p>Enterprise-grade security with email verification and password hashing.</p>
+            </div>
+            
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <h3>Easy Integration</h3>
+                <p>Simple API and clear documentation for quick implementation.</p>
+            </div>
+            
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16"/>
+                </svg>
+                <h3>User Management</h3>
+                <p>Comprehensive user profiles and session management tools.</p>
+            </div>
+        </div>
+
+        <div class="toast" id="toast"></div>
+    </section>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
